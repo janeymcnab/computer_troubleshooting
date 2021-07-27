@@ -19,17 +19,18 @@
 
 # responses = "yes" "no"
 
-
-
+print("************************************")
+print("* COMPUTER TROUBLESHOOTING PROGRAM *")
+print("************************************")
 
 print("Turn Computer On")
 
-boot_up = input("Did it boot up? ")
+boot_up = input("Did it boot up? (yes/no):  ")
 if boot_up == "no":
-    plugged_in = input("Is it plugged in? ")
+    plugged_in = input("Is it plugged in? (yes/no): ")
     if plugged_in == "no":
         print("Plug it in")
-        problem_solve = input("Did this fix the problem? ")
+        problem_solve = input("Did this fix the problem? (yes/no): ")
         if problem_solve == "no":
             print("The computer is broken.")
         else: 
