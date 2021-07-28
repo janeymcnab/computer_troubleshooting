@@ -39,3 +39,29 @@ if boot_up == "no":
         print("The computer is broken.")
 else:
     print("Login with password.")
+
+
+#refactoring above code to be more effiecient:
+
+comp_working = False
+print("Turn your computer on.")
+
+boot_up = input("Did it boot up? (yes/no) ")
+if boot_up == "yes":
+    comp_working = True
+else:
+    plugged_in = input("Is it plugged in? (yes/no) ")
+    if plugged_in == "no":
+        print("Plug it in")
+        solution = input("Did this fix the problem? (yes/no) ")
+        if solution == "yes":
+            comp_working = True       
+
+
+if comp_working == True:
+    print("Login with password.")
+else:
+    print("Your computer is broken.")
+
+
+
